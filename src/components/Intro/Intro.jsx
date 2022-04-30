@@ -10,7 +10,7 @@ import Vector2 from '../../img/Vector2.png'
 import Boy from '../../img/boy.png'
 import Thumbup from '../../img/thumbup.png'
 import Crown from '../../img/crown.png'
-import Glassimojii from '../../img/glassesimoji.png'
+import Glassimojii from '../../img/emoji.png'
 import FloatingDiv from '../FloatingDiv/FloatingDiv'
 const Intro = () => {
     return (
@@ -46,8 +46,34 @@ const Intro = () => {
                 <img src={Vector1} alt="Vector1" />
                 <img src={Vector2} alt="Vector2" />
                 <img src={Boy} alt="Mateen.png" />
-                <div>
-                    <FloatingDiv />
+                <img src={Glassimojii} alt="Mateen.png" />
+                <div style={{ top: '-4%', left: '68%' }}>
+                    <FloatingDiv
+                        image={Crown}
+                        text1="Web"
+                        text2="Developer"
+                    />
+                </div>
+                <div style={{ top: '18rem', left: '0rem' }}>
+                    <FloatingDiv
+                        image={Thumbup}
+                        text1="Best Design"
+                        text2="Award"
+                    />
+                </div>
+                <div 
+                className="blur" 
+                style={{ background: "rgb(236 210 255)" }}>
+                </div>
+                <div 
+                className="blur" 
+                style={{ 
+                    background: "#C1F5FF",
+                    top:"17rem",
+                    width:"21rem",
+                    height:"11rem",
+                    left:"-9rem"
+                    }}>
                 </div>
             </div>
         </div>
