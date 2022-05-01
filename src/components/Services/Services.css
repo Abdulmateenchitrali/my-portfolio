@@ -1,0 +1,33 @@
+.services{
+display: flex;
+margin-top: 7rem;
+padding: 0 3rem 0 3rem;
+margin-bottom: 6rem;
+height: 90vh;
+}
+.awesome{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+.awesome > :nth-child(1){
+    color: var(--black);
+    font-weight: bold;
+    font-size: 3rem;
+}
+.awesome > :nth-child(2){
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 3rem;
+}
+.awesome > :nth-child(3){
+    color: var(--gray);
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+.s-button{
+    width: 8rem;
+    margin-top: 1rem;
+    height: 2rem;
+}
