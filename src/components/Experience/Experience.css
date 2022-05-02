@@ -1,0 +1,41 @@
+.experience{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    height: 30vh;
+    border-bottom: 8rem;
+}
+.achivement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    position: relative;
+    background: white;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.circle::before{
+    border-radius: 100%;
+    content: '';
+    background-image: linear-gradient(to bottom, #87e6fb 0%,#ffc05c 100% );
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    position: absolute;
+    z-index: -1;
+    box-shadow: var(--boxShadow);
+}
+.achivement span:nth-of-type(2){
+    color: var(--orange);
+}
