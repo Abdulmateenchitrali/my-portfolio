@@ -3,14 +3,16 @@ import './App.css'
 import Intro from "./components/Intro/Intro";
 import Services from "./components/Services/Services";
 import Experience from "./components/Experience/Experience";
+import Work from "./components/Works/Work";
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <Intro/>
-      <Services/>
-      <Experience/>
+      <Navbar />
+      <Intro />
+      <Services />
+      <Experience />
+      <Work />
     </div>
   );
 }
