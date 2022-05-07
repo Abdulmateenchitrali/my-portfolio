@@ -8,6 +8,7 @@ import mateenCv from './mateenCv.pdf'
 const Services = () => {
   return (
     <div className="services">
+      {/* Left side */}
       <div className="awesome">
         <span>My attractive</span>
         <span>Services</span>
@@ -20,6 +21,7 @@ const Services = () => {
         </a>
         <div className="blur s-blur1" style={{background:"var(--purple"}}></div>
       </div>
+      {/* Right */}
       <div className="cards">
         <div style={{ left: "-18rem" }}>
           <Card
