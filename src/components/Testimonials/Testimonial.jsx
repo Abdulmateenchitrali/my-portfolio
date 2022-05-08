@@ -49,9 +49,9 @@ const Testimonial = () => {
     return (
         <div className="t-wrapper">
             <div className="t-heading">
-                <span>Clients always get</span> &nbsp;&nbsp;
-                <span>Exceptional Work</span>&nbsp;&nbsp;
-                <span>From me...</span>
+                <span>My Clients</span> &nbsp;&nbsp;
+                <span>Top Reviews</span>&nbsp;&nbsp;
+                <span>About me...</span>
                 <div className="blur t-blur1" style={{ background: "var(--purple)" }}></div>
                 <div className="blur t-blur2" style={{ background: "var(skyblue)" }}></div>
             </div>
@@ -59,7 +59,6 @@ const Testimonial = () => {
             <Swiper
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
                 slidesPerView={1}
-                // className='portfolio-slider'
                 grabCursor={true}
                 navigation
                 pagination={{ clickable: true }}
