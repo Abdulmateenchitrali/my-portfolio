@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Intro.css'
 import Github from '../../img/github.png'
 import LinkedIn from '../../img/linkedin.png'
@@ -12,14 +12,17 @@ import Thumbup from '../../img/thumbup.png'
 import Crown from '../../img/crown.png'
 import Glassimojii from '../../img/emoji.png'
 import FloatingDiv from '../FloatingDiv/FloatingDiv'
+import { themeContext } from '../../Context'
 const Intro = () => {
+    const theme=useContext(themeContext);
+    const darkMode=theme.state.darkMode;
     return (
         <div className="intro">
             <div className="i-left">
                 <div className="i-name">
-                    <span>H1! I am</span>
+                    <span style={darkMode ? {color:"white"}:''}>H1! I am</span>
                     <span>Abdul Mateen</span>
-                    <span>
+                    <span style={darkMode ? {color:"white"}:''}>
                         I am a programmer focused mainly on senior software engineers building data and debugging codes. And because elements are crucial to system functioning, its correctness depends on the quality of the back-end developer’s work.I have done my master’s in Computer Science from Islamia College, Peshawar.
                     </span>
                 </div>

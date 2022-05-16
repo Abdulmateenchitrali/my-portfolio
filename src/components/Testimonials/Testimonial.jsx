@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { A11y, Navigation, Pagination, Scrollbar } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react'
+import { themeContext } from '../../Context';
 import './Testimonial.css'
 const Testimonial = () => {
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
+
     const reviews = [
         {
             id: 1,
@@ -74,7 +78,7 @@ const Testimonial = () => {
                                     <span>Name: {review.author}</span>
                                     <span>Star: <span className='star'>{review.star}</span></span>
                                     <span>Star: <span className='job'>{review.job}</span></span>
-                                    <span>{review.msg}</span>
+                                    <span style={darkMode ? { color: "white" } : ''}>{review.msg}</span>
                                 </div>
                             </SwiperSlide>
                         )

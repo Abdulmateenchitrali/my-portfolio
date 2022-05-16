@@ -1,18 +1,21 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import "./Services.css"
 import Heartemoji from '../../img/heartemoji.png'
 import Glasses from '../../img/glasses.png'
 import Humble from '../../img/humble.png'
 import Card from '../Card/Card'
 import mateenCv from './mateenCv.pdf'
+import { themeContext } from '../../Context'
 const Services = () => {
+  const theme=useContext(themeContext);
+  const darkMode=theme.state.darkMode;
   return (
     <div className="services">
       {/* Left side */}
       <div className="awesome">
-        <span>My attractive</span>
+        <span style={darkMode ? {color:"white"}:''}>My attractive</span>
         <span>Services</span>
-        <span>
+        <span style={darkMode ? {color:"white",fontFamily:'Playfair display'}:''}>
           I can build a stunning portfolio of your brand. You may streamline your
           online eCommerce business with good conceptualisation, back-end development, and customisation. Unlike other solutions, our top-of-the-line eCommerce Solutions provide you with a higher Search Engine ranking and more sales traffic in a friendly environment. We provide essential highlights and adaptable  solutions to helpyou thrive in your online business. Furthermore, our eCommerce Website services provide industry-leading speed with excellent conversion rates.
         </span>
